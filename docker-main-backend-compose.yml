@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  main-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5891:5891"
+    restart: always
