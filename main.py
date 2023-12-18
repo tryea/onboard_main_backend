@@ -12,7 +12,7 @@ async def root():
 async def send_prompt(body: dict):
     try:
         response = requests.post(
-            url = "http://localhost:5892/generate_response",
+            url = "http://194.233.83.197:5892/generate_response",
             json= {
                 "prompt": body['prompt'],
             }
